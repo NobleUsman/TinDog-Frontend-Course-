@@ -1,0 +1,189 @@
+/*NOTE: We used z-index to hide title-image behind features section.*/
+/* For that we first applied background-color to features section as it was translucent.*/
+/* Then we added z-index:-1 to the title-image.*/
+/* Also, z-index needs "position:absolute" to work, so we put that too in title-image.*/
+/* Then we add position:absolute and z-index:1 on features section to bring it up*/
+
+
+#title {
+  background-color: #ff4c68;
+  color: #fff;
+}
+
+.title-image {
+  transform: rotate(20deg);
+  position: absolute;  /*In order for z-index to work, we need to add position: absolute to the element.*/
+}
+
+#features {
+  padding: 7% 15%;
+  background-color: #fff;  /*setting this as white color so that it'll help us to hide title-image using z-index as the page is translucent*/
+  position: relative;
+}
+
+body {
+  font-family: 'Montserrat-Black', sans-serif;
+}
+
+h1 {
+  font-family: 'Montserrat-Black', sans-serif;
+  font-weight: bold;
+  font-size: 3em;
+  line-height: 1.5;
+}
+
+h2 {
+  font-family: 'Montserrat-Black', sans-serif;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+h3 {
+  font-family: 'Montserrat-Black', sans-serif;
+  font-weight: bolder;
+}
+
+p {
+  color: #8f8f8f;
+}
+
+.container-fluid {
+  /* padding: 3% 15% ; */
+  /*3% is TOP/BOTTOM | 15% is LEFT/RIGHT*/
+  padding: 3% 15% 18%;
+  /*3% TOP | 15% LEFT/RIGHT | 7% BOTTOM*/
+}
+
+/* Navigation Bar */
+.navbar {
+  padding-bottom: 4.5rem;
+}
+
+.navbar-brand {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+}
+
+/* Download Buttons */
+.download-buttons {
+  margin: 5% 3% 0% 0%;
+}
+
+/* Font Awesome Icons */
+.ficons {
+  color: #ff7f93;
+  margin-bottom: 5%;
+}
+
+.ficons:hover {
+  color: #ff4c68;
+}
+
+/* Feature Section */
+.feature-box {
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 5%;
+}
+
+
+
+/* Testimonials Section */
+#testimonials {
+  text-align: center;
+  background-color: #ff7f93;
+  color: #fff;
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+/* Press Section */
+#press {
+  background-color: #ff7f93;
+  color: #fff;
+  padding: 3%;
+  text-align: center;
+}
+
+.presslogo {
+  width: 15%;
+  padding: 20px 20px 50px 20px;
+}
+
+/* Testimonial Section */
+.carousel-item {
+  padding: 7% 15%;
+}
+
+/* Pricing */
+#pricing {
+  padding: 7% 15%;
+  text-align: center;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+
+
+/* Media Query */
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+}
+
+/* CTA, Footer */
+#cta {
+  background-color: #ff7f93;
+  color: #fff;
+  text-align: center;
+  padding: 7% 15%;
+}
+
+#footer {
+  text-align: center;
+  padding: 7% 15%;
+}
+
+.footericons {
+  color: black;
+  padding: 3% 3%;
+  font-size: 2rem;
+}
+
+.tweet:hover {
+  color: #1DA1F2;
+}
+
+.insta:hover {
+  color: #fd1d1d;
+}
+
+.fb:hover {
+  color: #4267B2;
+}
+
+.envelope:hover {
+  color: grey;
+}
